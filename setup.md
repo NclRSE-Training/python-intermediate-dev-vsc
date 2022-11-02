@@ -149,9 +149,7 @@ If you are using a Python 3 distribution from [Python.org](https://www.python.or
 `venv` and `pip` will be automatically installed for you. If not, please make sure you have these
 two tools (that correspond to your Python distribution) installed on your machine.
 
-## PyCharm IDE
-We use JetBrains's [PyCharm Python Integrated Development Environment](https://www.jetbrains.com/pycharm) for the course.
-PyCharm can be downloaded from [the JetBrains website](https://www.jetbrains.com/pycharm/download).
-The Community edition is fine, though if you are developing software for the purpose of academic research you may be eligible for a free license for the Professional edition which contains extra features.
+## Visual Studio Code IDE) for the course. 
+We will be using Microsoft's [Visual Studio Code](https://code.visualstudio.com/), which is commonly referred to as VS Code, for the course. VS Code can be downloaded from [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download).
 
 {% include links.md %}
