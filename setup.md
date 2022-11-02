@@ -149,7 +149,7 @@ If you are using a Python 3 distribution from [Python.org](https://www.python.or
 `venv` and `pip` will be automatically installed for you. If not, please make sure you have these
 two tools (that correspond to your Python distribution) installed on your machine.
 
-## Visual Studio Code IDE) for the course. 
+## Visual Studio Code 
 We will be using Microsoft's [Visual Studio Code](https://code.visualstudio.com/), which is commonly referred to as VS Code, for the course. VS Code can be downloaded from [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download).
 
 {% include links.md %}
