@@ -116,7 +116,7 @@ All exercises contain solutions but, wherever possible, try and work out a solut
 {: .callout}
 
 > ## Outdated Screenshots
-> Throughout this lesson we will make use and show content from Graphical User Interface (GUI) tools (PyCharm and GitHub).
+> Throughout this lesson we will make use and show content from Graphical User Interface (GUI) tools (VS Code and GitHub).
 > These are evolving tools and platforms, always adding new features and new visual elements.
 > Screenshots in the lesson may then become out-of-sync, refer to or show content that no longer exists or is different to
 > what you see on your machine. If during the lesson you find screenshots that no longer match what you see or have
