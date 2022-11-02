@@ -57,7 +57,7 @@ IDEs often integrate command line console and version control tools - we teach
 them separately in this course as this knowledge can be ported to other programming languages and command line tools
 you may use in the future (but is applicable to the integrated versions too).
 
-We will use [VS Code]([https://www.jetbrains.com/pycharm/](https://code.visualstudio.com/) in this course - a free source-code editor. If you are interested to know more about VS Code's licensing there is an interesting blog article at [https://analyticsindiamag.com/is-microsofts-vs-code-really-open-source/](https://analyticsindiamag.com/is-microsofts-vs-code-really-open-source/).
+We will use [VS Code](https://code.visualstudio.com/) in this course - a free source-code editor. If you are interested to know more about VS Code's licensing there is an interesting blog article at [https://analyticsindiamag.com/is-microsofts-vs-code-really-open-source/](https://analyticsindiamag.com/is-microsofts-vs-code-really-open-source/).
 
 ### Git & GitHub
 [Git](https://git-scm.com/) is a free and open source distributed version control system designed to save every change made to a
