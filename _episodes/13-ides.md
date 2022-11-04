@@ -52,15 +52,30 @@ you - in this course we will learn how to use [VS Code](https://code.visualstudi
 Let's open our project in VS Code now and familiarise ourselves with some commonly used features.
 
 ### Opening a Software Project
-If you don't have VS Code running yet, start it up now. You should be presented with a windows such as in the image below.
+If you don't have VS Code running yet, start it up now. If this is the very first time that you are running VS Code you should be presented with a windows such as in the image below.
 
-![Startup screen of VS Code](../fig/vsc/open.png)
+![Startup screen of VS Code](../fig/vsc/00_vsc_getstarted_theme.png)
 
-Select `Open Folder` and find the software project directory `python-intermediate-inflammation` you cloned earlier.
+On this screen you can select the theme that you would like. There are two light themes, i.e. dark text on a light background and two dark themes, i.e. light text on a dark background. Select the theme that you think would give you the best environment to work in. When you have made your selection, click on `Next Section` at the bottom of the screen.
+
+At this point, we can ignore the next screen which allows you to configure your editing environment. Just click `Next Section` at the bottom of the screen.
+
+![Editor Playground](../fig/vsc/01_vsc_getstarted_editor.png)
+
+On the next screen you would want to select `Side by side editing` and `Install Git`. Leave `Customize your shortcuts` unticked for now. When done, click `Mark Done`.
+
+![Split screen](../fig/vsc/02_vsc_getstarted_splitscreen.png)
+
+Select `Open Folder` to find the software project directory `python-intermediate-inflammation` you cloned earlier. 
+
+![Open Folder](../fig/vsc/03_vsc_getstarted_open.png )
+
+A window will pop up asking whether you trust the authors of the files in the folder. You can click the button that says: "Yes, I trust the authors. Trus folder and enable all features." You could also tick the box above to "Trust the authors of all files in the parent folder".
+
+![Trust](../fig/vsc/04_vsc_getstarted_trust.png)
+
 This directory is now the current working directory for VS Code, so when we run scripts from VS Code,
 this is the directory they will run from.
-
-![Open Folder](../fig/vsc/OpenFolder.png)
 
 You will notice the editor showing you a list of icons on the left hand side, just below the VS Code logo. From top to bottom these are:
 - Explorer
@@ -69,14 +84,9 @@ You will notice the editor showing you a list of icons on the left hand side, ju
 - Run and Debug
 - Extensions
 
-If you hover over these icons with your mouse a tooltip should pop up showing you what each icon is for. If you click on the Explorer icon
+If you hover over these icons with your mouse a tooltip should pop up showing you what each icon is for. You should also now see the file explorer opened on the left hand side, showing you a tree view of the files in the selected folder:
 
-
-You will notice the IDE shows you a project/file navigator window on the left hand side, to traverse and select the files
-(and any subdirectories) within the working directory, and an editor window on the right. At the bottom, you would
-typically have a panel for version control, terminal (the command line within PyCharm) and a TODO list.
-
-![View of an opened project in PyCharm](../fig/pycharm-open-project.png){: .image-with-shadow width="1000px" }
+![Get started explorer](../fig/vsc/05_fsc_getstarted_explorer.png)
 
 Select the `inflammation-analysis.py` file in the project navigator on the left so that its contents are
 displayed in the editor window. You may notice a warning about the missing Python interpreter at the top of the editor panel showing `inflammation-analysis.py` file - this is one of the first things you will have to configure for your project before you can do any work. 
