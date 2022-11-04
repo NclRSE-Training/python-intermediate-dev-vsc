@@ -54,11 +54,13 @@ Let's open our project in VS Code now and familiarise ourselves with some common
 ### Opening a Software Project
 If you don't have VS Code running yet, start it up now. You should be presented with a windows such as in the image below.
 
-![Startup screen of VS Code](../fig/open.png)
+![Startup screen of VS Code](../fig/vsc/open.png)
 
 Select `Open Folder` and find the software project directory `python-intermediate-inflammation` you cloned earlier.
 This directory is now the current working directory for VS Code, so when we run scripts from VS Code,
 this is the directory they will run from.
+
+![Open Folder](../fig/vsc/OpenFolder.png)
 
 You will notice the editor showing you a list of icons on the left hand side, just below the VS Code logo. From top to bottom these are:
 - Explorer
