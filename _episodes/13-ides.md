@@ -86,7 +86,7 @@ You will notice the editor showing you a list of icons on the left hand side, ju
 
 If you hover over these icons with your mouse a tooltip should pop up showing you what each icon is for. You should also now see the file explorer opened on the left hand side, showing you a tree view of the files in the selected folder:
 
-![Get started explorer](../fig/vsc/05_fsc_getstarted_explorer.png)
+![Get started explorer](../fig/vsc/05_vsc_getstarted_explorer.png)
 
 Select the `inflammation-analysis.py` file in the project navigator on the left so that its contents are
 displayed in the editor window. You may notice a warning about the missing Python interpreter at the top of the editor panel showing `inflammation-analysis.py` file - this is one of the first things you will have to configure for your project before you can do any work. 
