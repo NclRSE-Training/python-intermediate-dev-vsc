@@ -52,18 +52,24 @@ you - in this course we will learn how to use [VS Code](https://code.visualstudi
 Let's open our project in VS Code now and familiarise ourselves with some commonly used features.
 
 ### Opening a Software Project
-If you don't have VS Code running yet, start it up now. You can skip the initial configuration steps which just go through
-selecting a theme and other aspects. You should be presented with a dialog box that asks you what you want to do,
-e.g. `Create New Project`, `Open`, or `Check out from Version Control`.
+If you don't have VS Code running yet, start it up now. You should be presented with a windows such as in the image below.
 
-Select `Open` and find the software project directory `python-intermediate-inflammation` you cloned earlier.
-This directory is now the current working directory for PyCharm, so when we run scripts from PyCharm,
+![Startup screen of VS Code](../fig/open.png)
+
+Select `Open Folder` and find the software project directory `python-intermediate-inflammation` you cloned earlier.
+This directory is now the current working directory for VS Code, so when we run scripts from VS Code,
 this is the directory they will run from.
 
-PyCharm will show you a *'Tip of the Day'* window which you can safely ignore and close for now. You may also get a
-warning *'No Python interpreter configured for the project'* - we [will deal with this](#configuring-pycharm-with-anaconda)
-shortly after we familiarise ourselves with
-the PyCharm environment.
+You will notice the editor showing you a list of icons on the left hand side, just below the VS Code logo. From top to bottom these are:
+- Explorer
+- Search
+- Source Control
+- Run and Debug
+- Extensions
+
+If you hover over these icons with your mouse a tooltip should pop up showing you what each icon is for. If you click on the Explorer icon
+
+
 You will notice the IDE shows you a project/file navigator window on the left hand side, to traverse and select the files
 (and any subdirectories) within the working directory, and an editor window on the right. At the bottom, you would
 typically have a panel for version control, terminal (the command line within PyCharm) and a TODO list.
