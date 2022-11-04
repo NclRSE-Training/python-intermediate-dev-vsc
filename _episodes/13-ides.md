@@ -7,13 +7,13 @@ questions:
 - "What are Integrated Development Environments (IDEs)?"
 - "What are the advantages of using IDEs for software development?"
 objectives:
-- "Set up a (virtual) development environment in PyCharm"
-- "Use PyCharm to run a Python script"
+- "Set up a (virtual) development environment in VS Code"
+- "Use VS Code to run a Python script"
 
 keypoints:
 - "An IDE is an application that provides a comprehensive set of facilities for software development, including
 syntax highlighting, code search and completion, version control, testing and debugging."
-- "PyCharm recognises virtual environments configured from the command line using `venv` and `pip`."
+- "With the correct extensions installed VS Code recognises virtual environments configured from the command line using `venv` and `pip`."
 ---
 
 ## Introduction
@@ -45,15 +45,14 @@ Python support. Code editors can be as simple as a text editor with syntax highl
 (e.g. GNU EMACS, Vi/Vim, Atom). Most good code editors can also execute code and control a
 debugger, and some can also interact with a version control system. Compared to an IDE, a good dedicated code
 editor is usually smaller and quicker, but often less feature-rich. You will have to decide which one is the best for
-you - in this course we will learn how to use [PyCharm](https://www.jetbrains.com/pycharm/), a free,
-open source Python IDE. Some popular alternatives include free and open source IDE [Spyder](https://www.spyder-ide.org/) and Microsoft's free [Visual Studio Code](https://code.visualstudio.com/).
+you - in this course we will learn how to use [VS Code](https://code.visualstudio.com/), a free code editor from Microsoft. Some popular alternatives include free and open source IDE [Spyder](https://www.spyder-ide.org/) and [PyCharm](https://www.jetbrains.com/pycharm/), a free open source Python IDE.
 
-## Using the PyCharm IDE
+## Using Visual Source Code
 
-Let's open our project in PyCharm now and familiarise ourselves with some commonly used features.
+Let's open our project in VS Code now and familiarise ourselves with some commonly used features.
 
 ### Opening a Software Project
-If you don't have PyCharm running yet, start it up now. You can skip the initial configuration steps which just go through
+If you don't have VS Code running yet, start it up now. You can skip the initial configuration steps which just go through
 selecting a theme and other aspects. You should be presented with a dialog box that asks you what you want to do,
 e.g. `Create New Project`, `Open`, or `Check out from Version Control`.
 
