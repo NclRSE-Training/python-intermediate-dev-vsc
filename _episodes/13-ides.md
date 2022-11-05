@@ -77,29 +77,32 @@ A window will pop up asking whether you trust the authors of the files in the fo
 This directory is now the current working directory for VS Code, so when we run scripts from VS Code,
 this is the directory they will run from.
 
-You will notice the editor showing you a list of icons on the left hand side, just below the VS Code logo. From top to bottom these are:
+You will notice the editor showing you a list of icons on the left hand side, just below the VS Code logo. This area is called the `Activity Bar`. From top to bottom these are:
 - Explorer
 - Search
 - Source Control
 - Run and Debug
 - Extensions
 
-If you hover over these icons with your mouse a tooltip should pop up showing you what each icon is for. You should also now see the file explorer opened on the left hand side, showing you a tree view of the files in the selected folder:
+If you hover over these icons with your mouse a tooltip should pop up showing you what each icon is for. You should also now see the file explorer opened on the left hand side, the `Side Bar`, showing you a tree view of the files in the selected folder. The explorer icon will also be highlighted, while the others are greyed:
 
 ![Get started explorer](../fig/vsc/05_vsc_getstarted_explorer.png)
 
-Select the `inflammation-analysis.py` file in the file explorer. The file will open in the editor window, but at the bottom of the screen you will see a notification with the question, `Do you want to install the recommended extentions for Python?` Click the `Install` button.
+Select the `inflammation-analysis.py` file in the 'Side Bar'. The file will open in the editor window, but at the bottom of the screen you will see a notification with the question, `Do you want to install the recommended extentions for Python?` Click the `Install` button.
 
 ![Get Python extensions](../fig/vsc/06_vsc_open_inflammation.png)
 
+On the next window you will be able to install the Python extension. Click the install button.
 
-project navigator on the left so that its contents are
-displayed in the editor window. You may notice a warning about the missing Python interpreter at the top of the editor panel showing `inflammation-analysis.py` file - this is one of the first things you will have to configure for your project before you can do any work. 
+![Install Python extension](../fig/vsc/07_vsc_python_extension.png)
 
-![Missing Python Interpreter Warning in PyCharm](../fig/pycharm-missing-python-interpreter.png){: .image-with-shadow width="800px" } 
+After the installation more tabs might have opened next to the inflammation-analysis.py tab. You can close those tabs by clicking on the X in the tab next to the tab name, but leave the inflammation-analysis.py tab obpen. You might also have noticed in the `Side Bar` the `Explorer` has been replaced by `Extensions` and the extension icon in the `Activity Bar` is now hightlighted, while the others are greyed. 
 
-You may take the shortcut and click on one of the offered options above but we want to take you through 
-the whole process of setting up your environment in PyCharm as this is important conceptually. 
+![Extension installed](../fig/vsc/09_vsc_extension_installed.png)
+
+VS Code will need one more Python extension to manage virtual environments. In the `Side Bar` there is a text box which should have something along the lines of `@id:ms-python.python` in it at this point. You can type search criteria in this text box to filter the list of extensions that are available. Change the text to `venv`. Two available extensions should be displayed.
+
+![Extension search](../fig/vsc/10_vsc_extension_search.png)
 
 ### Configuring a Virtual Environment in PyCharm
 Before you can run the code from PyCharm, you need to explicitly specify the path to the Python
