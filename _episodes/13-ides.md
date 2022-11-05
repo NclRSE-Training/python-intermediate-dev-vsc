@@ -88,7 +88,12 @@ If you hover over these icons with your mouse a tooltip should pop up showing yo
 
 ![Get started explorer](../fig/vsc/05_vsc_getstarted_explorer.png)
 
-Select the `inflammation-analysis.py` file in the project navigator on the left so that its contents are
+Select the `inflammation-analysis.py` file in the file explorer. The file will open in the editor window, but at the bottom of the screen you will see a notification with the question, `Do you want to install the recommended extentions for Python?` Click the `Install` button.
+
+![Get Python extensions](../fig/vsc/06_vsc_open_inflammation.png)
+
+
+project navigator on the left so that its contents are
 displayed in the editor window. You may notice a warning about the missing Python interpreter at the top of the editor panel showing `inflammation-analysis.py` file - this is one of the first things you will have to configure for your project before you can do any work. 
 
 ![Missing Python Interpreter Warning in PyCharm](../fig/pycharm-missing-python-interpreter.png){: .image-with-shadow width="800px" } 
