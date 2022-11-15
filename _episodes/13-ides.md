@@ -100,9 +100,7 @@ After the installation more tabs might have opened next to the inflammation-anal
 
 ![Extension installed](../fig/vsc/09_vsc_extension_installed.png)
 
-VS Code will need one more Python extension to manage virtual environments. In the `Side Bar` there is a text box which should have something along the lines of `@id:ms-python.python` in it at this point. You can type search criteria in this text box to filter the list of extensions that are available. Change the text to `venv`. Two available extensions should be displayed.
 
-![Extension search](../fig/vsc/10_vsc_extension_search.png)
 
 ### Configuring a Virtual Environment in PyCharm
 Before you can run the code from PyCharm, you need to explicitly specify the path to the Python
