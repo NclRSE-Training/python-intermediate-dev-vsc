@@ -101,23 +101,29 @@ After the installation more tabs might have opened next to the inflammation-anal
 ![Extension installed](../fig/vsc/09_vsc_extension_installed.png)
 
 ### Configuring the Terminal
-VS Code has a built-in terminal which you can open, as sometimes you might want to execute commands directly in the terminal. By default VS Code, in Windows, will open the PowerShell which has restricted access. You can see what this looks like by clicking 'Terminal' on the menu and then selecting 'New Terminal'. The new terminal should open at the bottom of the screen. If you still have the 'inflammation-analysis.py' file open, you might see error message displayed as in the screenshot below:
+VS Code has a built-in terminal which you can open, as sometimes you might want to execute commands directly in the terminal. By default VS Code, in Windows, will open the PowerShell which has restricted access. You can see what this looks like by clicking `Terminal` on the menu and then selecting `New Terminal`. The new terminal should open at the bottom of the screen. If you still have the `inflammation-analysis.py` file open, you might see error message displayed as in the screenshot below:
 
 ![Error in terminal](../fig/vsc/10_terminal_error.png)
 
-To change the default terminal, look at the top of the terminal section. There should be a '> powershell' button. Click on the 'v' arrow to the right of the '> powershell' button and select 'Git Bash'.
+To change the default terminal, look at the top of the terminal section. There should be a `> powershell` button. Click on the `v` arrow to the right of the `> powershell` button and select `Git Bash`.
 
 ![Select Git Bash shell](../fig/vsc/11_select_GitBash.png)
 
-A 'Git Bash' shell should have opened. You should see (.venv) displayed in the shell which means the virtual environment has been detected. There should be no error messages. To the right hand side of the terminal you should notice a section displaying two shells - the powershell that we had open before and below that 'bash' which is our current 'Git Bash' shell. 
+A `Git Bash` shell should have opened. You should see (.venv) displayed in the shell which means the virtual environment has been detected. There should be no error messages. To the right hand side of the terminal you should notice a section displaying two shells - the powershell that we had open before and below that `bash` which is our current `Git Bash` shell. 
 
 ![Git Bash](../fig/vsc/12_gitbash.png)
 
-You can close the powershell by hovering over the button with the mouse at which time a garbage bin should appear next to it. Click on the garbage bin to close the terminal. The 'bash' shell should remain open.
+You can close the powershell by hovering over the button with the mouse at which time a garbage bin should appear next to it. Click on the garbage bin to close the terminal. The `bash` shell should remain open.
 
 ![Close Powershell](../fig/vsc/13_close_powershhell.png)
 
 ### Configuring a Virtual Environment in VS Code
+Because we created the `venv` environment before we opened the project in VS Code, VS Code and the Python extension were able to detect the environment. We could see that this was the case when we opened the terminal and saw `(.venv)` displayed before the prompt.
+
+If we didn't create the virtual environment beforehand we can do after we opened the project folder in VS Code. To create such a virtual environment you have to click `Ctrl+Shift+P`. In the search box, start typing 'Python: Create Environment'. You won't have to completely type the string before you'll notice it in the list. Click on `Python: Create Environment`. Then select `Venv Creates a '.venv' virtual environment in the the current workspace`.
+
+You should now get a list of installed Python interpreters. You should select the one that is required for your project. A `.venv` directory will now be created. You should be able to se this happen in the explorer tab.
+
 Before you can run the code from VS Code, you need to explicitly specify the path to the Python
 interpreter on your system. The same goes for any dependencies your code may have - you need to tell PyCharm
 where to find them - much like we did from the command line in the previous episode. Luckily for us, we have already set up a virtual environment
