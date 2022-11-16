@@ -100,10 +100,13 @@ After the installation more tabs might have opened next to the inflammation-anal
 
 ![Extension installed](../fig/vsc/09_vsc_extension_installed.png)
 
+### Configuring the Terminal
+VS Code has a built-in terminal which you can open, as sometimes you might want to execute commands directly in the terminal. By default VS Code, in Windows, will open the PowerShell which has restricted access. You can see what this looks like by clicking 'Terminal' on the menu and then selecting 'New Terminal'. The new terminal should open at the bottom of the screen. If you still have the 'inflammation-analysis.py' file open, you might see error message displayed as in the screenshot below:
 
+![Error in terminal](../fig/vsc/10_terminal_error.png)
 
-### Configuring a Virtual Environment in PyCharm
-Before you can run the code from PyCharm, you need to explicitly specify the path to the Python
+### Configuring a Virtual Environment in VS Code
+Before you can run the code from VS Codevs, you need to explicitly specify the path to the Python
 interpreter on your system. The same goes for any dependencies your code may have - you need to tell PyCharm
 where to find them - much like we did from the command line in the previous episode. Luckily for us, we have already set up a virtual environment
 for our project from the command line and PyCharm is clever enough to understand it.
