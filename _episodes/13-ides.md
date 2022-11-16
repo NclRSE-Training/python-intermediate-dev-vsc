@@ -105,8 +105,20 @@ VS Code has a built-in terminal which you can open, as sometimes you might want 
 
 ![Error in terminal](../fig/vsc/10_terminal_error.png)
 
+To change the default terminal, look at the top of the terminal section. There should be a '> powershell' button. Click on the 'v' arrow to the right of the '> powershell' button and select 'Git Bash'.
+
+![Select Git Bash shell](../fig/vsc/11_select_GitBash.png)
+
+A 'Git Bash' shell should have opened. You should see (.venv) displayed in the shell which means the virtual environment has been detected. There should be no error messages. To the right hand side of the terminal you should notice a section displaying two shells - the powershell that we had open before and below that 'bash' which is our current 'Git Bash' shell. 
+
+![Git Bash](../fig/vsc/12_gitbash.png)
+
+You can close the powershell by hovering over the button with the mouse at which time a garbage bin should appear next to it. Click on the garbage bin to close the terminal. The 'bash' shell should remain open.
+
+![Close Powershell](../fig/vsc/13_close_powershhell.png)
+
 ### Configuring a Virtual Environment in VS Code
-Before you can run the code from VS Codevs, you need to explicitly specify the path to the Python
+Before you can run the code from VS Code, you need to explicitly specify the path to the Python
 interpreter on your system. The same goes for any dependencies your code may have - you need to tell PyCharm
 where to find them - much like we did from the command line in the previous episode. Luckily for us, we have already set up a virtual environment
 for our project from the command line and PyCharm is clever enough to understand it.
