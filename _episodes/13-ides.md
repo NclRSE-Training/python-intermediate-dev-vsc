@@ -272,9 +272,6 @@ VS Code allows you to do version control from within the editor, i.e. you don't 
 ![Add version control](../fig/vsc/19_add_to_github.png){: .image-with-shadow width="1000px" }
 
 
-During this course, we will do all our version control commands from the command line but it is worth
-noting that it can be done from within VS Code.
-
 ### Running Scripts in VS Code
 We have configured our environment and explored some of the most commonly used VS Code features and are now ready to run our script from VS Code! To do so, right-click the `inflammation-analysis.py` file in the Explorer in the Activity Bar and then select `Run Python File in Terminal`. 
 
