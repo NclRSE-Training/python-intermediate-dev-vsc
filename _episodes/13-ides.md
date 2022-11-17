@@ -265,31 +265,15 @@ in the whole project:
 ![Find in file](../fig/vsc/18_find_in_files.png){: .image-with-shadow width="1000px" }
 
 
-    ![Code Search Functionality in PyCharm](../fig/pycharm-code-search.png){: .image-with-shadow width="800px" } 
-    If you need, specify the additional options in the popup. PyCharm will list the search strings and all the files that contain them.
-3. Check the results in the preview area of the dialog where you can replace the search string or select another string,
-or press `Command-Shift-F` (on Mac) or `Control-Shift-F` (on Windows) again to start a new search.
-4. To see the list of occurrences in a separate panel, click the `Open in Find Window` button in the bottom right
-corner. The find panel will appear at the bottom of the main window; use this panel and its options to group the results, preview them, and work with them further.
-
-    ![Code Search Functionality in PyCharm](../fig/pycharm-find-panel.png){: .image-with-shadow width="1000px" }
-
 ### Version Control
-PyCharm supports a directory-based versioning model, which means that each project directory can be
-associated with a different version control system. Our project was already under Git version control and PyCharm
-recognised it. It is also possible to add an unversioned project directory to version control directly from PyCharm.
+
+VS Code allows you to do version control from within the editor, i.e. you don't have to use the terminal. Our project was already under Git version control and VS Code recognised it. If a project is not yet under version control you can do so by navigating to Source Control using the button on the Activity Bar.
+
+![Add version control](../fig/vsc/19_add_to_github.png){: .image-with-shadow width="1000px" }
+
 
 During this course, we will do all our version control commands from the command line but it is worth
-noting that PyCharm supports a comprehensive subset of Git commands (i.e. it is possible to perform a set of common
-Git commands from PyCharm but not all). A very useful version control feature in PyCharm is graphically comparing
-changes you made locally to a file with the version of the file in a repository, 
-a different commit version or a version in a different
-branch - this is something that cannot be done equally well from the text-based command line.
-
-You can get a full
-[documentation on PyCharm's built-in version control support](https://www.jetbrains.com/help/pycharm/version-control-integration.html) online.
-
-![Version Control Functionality in PyCharm](../fig/pycharm-version-control.png){: .image-with-shadow width="1000px" }
+noting that it can be done from within VS Code.
 
 ### Running Scripts in PyCharm
 We have configured our environment and explored some of the most commonly used PyCharm features and are now ready to run our script from PyCharm! To do so, right-click the `inflammation-analysis.py` file in the PyCharm project/file navigator on the left, and select `Run 'inflammation analysis'` (i.e. the Run Configuration we created earlier).
