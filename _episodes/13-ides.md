@@ -218,52 +218,21 @@ tomli==1.2.2
 >{: .solution}
 {: .challenge}
 
-#### Adding a Run Configuration for Our Project
-Having configured a virtual environment, we now need to tell PyCharm to use it for our project. This is done by adding a **Run Configuration** to a project:
-
-1. To add a new configuration for a project - select `Run` > `Edit Configurations...` from the top menu.
-2. Select `Add new run configuration...` then `Python`.
-   ![Adding a Run Configuration in PyCharm](../fig/pycharm-add-run-configuration.png){: .image-with-shadow width="800px" }
-3. In the new popup window, in the `Script path` field select the folder
-   button and find and select `inflammation-analysis.py`. This tells PyCharm which script to run (i.e. what the main entry point to our application is).
-   ![Run Configuration Popup in PyCharm](../fig/pycharm-run-configuration-popup.png){: .image-with-shadow width="800px" }
-4. In the same window, select "Python 3.9 (python-intermediate-inflammation)" (i.e. the virtual environment and interpreter you configured earlier in this episode) in the `Python interpreter` field.
-5. You can give this run configuration a name at the top of the window if you like - e.g. let's name it `inflammation analysis`.
-6. You can optionally configure run parameters and environment variables in the same window - we do not need this at the moment.
-7. Select `Apply` to confirm these settings.
-
-> ## Virtual Environments & Run Configurations in PyCharm
->
-> We configured the Python interpreter to use for our project by pointing PyCharm to the
-> virtual environment we created from the command line (which also includes external libraries
-> our code needs to run).
-> Recall that you can create several virtual environments based on the same Python interpreter but with
-different external libraries - this is helpful when you need to develop different types of applications.
-> For example, you can create one virtual environment based on Python 3.9 to develop Django Web applications and another virtual environment based on the same Python 3.9 to work with scientific libraries.
->
-> **Run Configurations** in PyCharm are named sets of startup properties that define what to execute and what parameters (i.e. what additional configuration options) to use on top of virtual environments.
-> You can vary these configurations each time your code is executed, which is particularly useful for running, debugging and testing your code.
-{: .callout}
-
-Now you know how to configure and manipulate your environment in both tools (command line and PyCharm), 
-which is a useful parallel to be aware of. Let's have a look at some other features afforded to us by 
-PyCharm.
-
 ### Syntax Highlighting
 The first thing you may notice is that code is displayed using different colours.
 Syntax highlighting is a feature that displays source code terms in different colours and fonts according to the syntax
 category the highlighted term belongs to. It also makes syntax errors visually distinct. Highlighting does not affect
 the meaning of the code itself - it's intended only for humans to make reading code and finding errors easier.
 
-![Syntax Highlighting Functionality in PyCharm](../fig/pycharm-syntax-highlighting.png){: .image-with-shadow width="1000px" }
+![Syntax Highlighting Functionality in VS Code](../fig/vsc/14_syntaxhighlighting.png){: .image-with-shadow width="1000px" }
 
 ### Code Completion
-As you start typing code, PyCharm will offer to complete some of the code for you in the form of an auto completion popup.
+As you start typing code, VS Code will offer to complete some of the code for you in the form of an auto completion popup.
 This is a context-aware code completion feature that speeds up the process of coding (e.g. reducing typos and other
 common mistakes) by offering available variable
 names, functions from available packages, parameters of functions, hints related to syntax errors, etc.
 
-![Code Completion Functionality in PyCharm](../fig/pycharm-code-completion.png){: .image-with-shadow width="600px" }
+![Code Completion Functionality in PyCharm](../fig/vsc/15_codecompletion.png){: .image-with-shadow width="600px" }
 
 ### Code Definition & Documentation References
 You will often need code reference information to help you code. PyCharm shows this useful information, such as definitions of symbols (e.g. functions, parameters, classes, fields, and methods) and documentation references by means of quick popups and inline tooltips.
