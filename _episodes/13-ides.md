@@ -276,9 +276,9 @@ During this course, we will do all our version control commands from the command
 noting that it can be done from within VS Code.
 
 ### Running Scripts in PyCharm
-We have configured our environment and explored some of the most commonly used PyCharm features and are now ready to run our script from PyCharm! To do so, right-click the `inflammation-analysis.py` file in the PyCharm project/file navigator on the left, and select `Run 'inflammation analysis'` (i.e. the Run Configuration we created earlier).
+We have configured our environment and explored some of the most commonly used VS Code features and are now ready to run our script from VS Code! To do so, right-click the `inflammation-analysis.py` file in the Explorer in the Activity Bar and then select `Run Python File in Terminal`. 
 
-![Running a script from PyCharm](../fig/pycharm-run-script.png){: .image-with-shadow width="800px" }
+![Running a script from VS Code](../fig/pycharm-run-script.png){: .image-with-shadow width="800px" }
 
 The script will run in a terminal window at the bottom of the IDE window and display something like:
 
