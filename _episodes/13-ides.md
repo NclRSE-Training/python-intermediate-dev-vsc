@@ -124,165 +124,17 @@ If we didn't create the virtual environment beforehand we can do after we opened
 
 You should now get a list of installed Python interpreters. You should select the one that is required for your project. A `.venv` directory will now be created. You should be able to se this happen in the explorer tab.
 
-Before you can run the code from VS Code, you need to explicitly specify the path to the Python
-interpreter on your system. The same goes for any dependencies your code may have - you need to tell PyCharm
-where to find them - much like we did from the command line in the previous episode. Luckily for us, we have already set up a virtual environment
-for our project from the command line and PyCharm is clever enough to understand it.
-
-#### Adding a Python Interpreter
-1. Select either `PyCharm` > `Preferences` (Mac) or `File` > `Settings` (Linux, Windows).
-2. In the preferences window that appears, select `Project: python-intermediate-inflammation` >
-   `Python Interpreter` from the left. You'll
-   see a number of Python packages displayed as a list, and importantly above that, the current Python interpreter that is
-   being used. These may be blank or set to `<No interpreter>`, or possibly the default version of Python installed on your system, e.g. `Python 2.7 /usr/bin/python2.7`, which we do not want to use in this instance.
-3. Select the cog-like button in the top right, then `Add Local...` (or `Add...` depending on your PyCharm version). An `Add Python Interpreter` window will appear.
-4. Select `Virtualenv` from the list on the left and ensure that `Existing environment` checkbox is
-   selected within the popup window. In the `Interpreter` field point to the Python 3 executable inside 
-   your virtual environment's `bin` directory (make sure you navigate to it and select it from the 
-   file browser rather than just accept the default offered by PyCharm). Note that there is also an option to create a new virtual environment, 
-   but we are not using that option as we want to reuse the one we created from the command line in 
-   the previous episode.
-   ![Configuring Python Interpreter in PyCharm](../fig/pycharm-configuring-interpreter.png){: .image-with-shadow width="800px"}
-5. Select `Make available to all projects` checkbox so we can also use this environment for other projects if we wish.
-6. Select `OK` in the `Add Python Interpreter` window. Back in the `Preferences` window, you should select
-   "Python 3.9 (python-intermediate-inflammation)" or similar (that you've just added) from the `Project Interpreter` drop-down list.
-
-Note that a number of external libraries have magically appeared under the
-"Python 3.9 (python-intermediate-inflammation)" interpreter, including `numpy` and `matplotlib`. PyCharm has recognised
-the virtual environment we created from the command line using `venv` and has added these libraries
-effectively replicating our virtual environment in PyCharm (referred to as "Python 3.9 (python-intermediate-inflammation)"). 
-
-![Packages Currently Installed in a Virtual Environment in PyCharm](../fig/pycharm-installed-packages.png){: .image-with-shadow width="800px"}
-
-Also note that, although the names are not the same - this is one and the same virtual environment and changes done to it in PyCharm will propagate to the command line and vice versa. Let's see this in 
-action through the following exercise.
-
-> ## Exercise: Compare External Libraries in the Command Line and PyCharm
->Can you recall two places where information about our project's dependencies
-can be found from the command line? Compare that information with the equivalent configuration in PyCharm.
->
->Hint: We can use an argument to `pip`, or find the packages directly in a subdirectory
-of our virtual environment directory `venv`.
->
->> ## Solution
->> From the previous episode, you may remember that we can get the list of packages in the current virtual environment using the `pip3 list` command:
->> ~~~
->> (venv) $ pip3 list
->> ~~~
->> {: .language-bash}
->> ~~~
-Package         Version
---------------- -------
-cycler          0.11.0
-fonttools       4.28.1
-kiwisolver      1.3.2
-matplotlib      3.5.0
-numpy           1.21.4
-packaging       21.2
-Pillow          8.4.0
-pip             21.1.3
-pyparsing       2.4.7
-python-dateutil 2.8.2
-setuptools      57.0.0
-setuptools-scm  6.3.2
-six             1.16.0
-tomli           1.2.2
->> ~~~
->> {: .output}
->> However, `pip3 list` shows all the packages in the virtual environment - if we want to see only the list of packages that we installed, we can use the `pip3 freeze` command instead:
->> ~~~
->> (venv) $ pip3 freeze
->> ~~~
->> {: .language-bash}
->> ~~~
-cycler==0.11.0
-fonttools==4.28.1
-kiwisolver==1.3.2
-matplotlib==3.5.0
-numpy==1.21.4
-packaging==21.2
-Pillow==8.4.0
-pyparsing==2.4.7
-python-dateutil==2.8.2
-setuptools-scm==6.3.2
-six==1.16.0
-tomli==1.2.2
->> ~~~
->> {: .output}
->> We see `pip` in `pip3 list` but not in `pip3 freeze` as we did not install it using `pip`. 
->> Remember that we use `pip3 freeze` to update our `requirements.txt` file, to keep a list of the packages our virtual environment includes. 
->> Python will not do this automatically; we have to manually update the file when our requirements change using:
->> ~~~
->> pip3 freeze > requirements.txt
->> ~~~
->> {: .language-bash}
->>
->> If we want, we can also see the list of packages directly in the following subdirectory of `venv`:
->>~~~
->>(venv) $ ls -l venv/lib/python3.9/site-packages
->>~~~
->>{: .language-bash}
->>
->>~~~
-total 1088
-drwxr-xr-x  103 alex  staff    3296 17 Nov 11:55 PIL
-drwxr-xr-x    9 alex  staff     288 17 Nov 11:55 Pillow-8.4.0.dist-info
-drwxr-xr-x    6 alex  staff     192 17 Nov 11:55 __pycache__
-drwxr-xr-x    5 alex  staff     160 17 Nov 11:53 _distutils_hack
-drwxr-xr-x    8 alex  staff     256 17 Nov 11:55 cycler-0.11.0.dist-info
--rw-r--r--    1 alex  staff   14519 17 Nov 11:55 cycler.py
-drwxr-xr-x   14 alex  staff     448 17 Nov 11:55 dateutil
--rw-r--r--    1 alex  staff     152 17 Nov 11:53 distutils-precedence.pth
-drwxr-xr-x   31 alex  staff     992 17 Nov 11:55 fontTools
-drwxr-xr-x    9 alex  staff     288 17 Nov 11:55 fonttools-4.28.1.dist-info
-drwxr-xr-x    8 alex  staff     256 17 Nov 11:55 kiwisolver-1.3.2.dist-info
--rwxr-xr-x    1 alex  staff  216968 17 Nov 11:55 kiwisolver.cpython-39-darwin.so
-drwxr-xr-x   92 alex  staff    2944 17 Nov 11:55 matplotlib
--rw-r--r--    1 alex  staff     569 17 Nov 11:55 matplotlib-3.5.0-py3.9-nspkg.pth
-drwxr-xr-x   20 alex  staff     640 17 Nov 11:55 matplotlib-3.5.0.dist-info
-drwxr-xr-x    7 alex  staff     224 17 Nov 11:55 mpl_toolkits
-drwxr-xr-x   39 alex  staff    1248 17 Nov 11:55 numpy
-drwxr-xr-x   11 alex  staff     352 17 Nov 11:55 numpy-1.21.4.dist-info
-drwxr-xr-x   15 alex  staff     480 17 Nov 11:55 packaging
-drwxr-xr-x   10 alex  staff     320 17 Nov 11:55 packaging-21.2.dist-info
-drwxr-xr-x    8 alex  staff     256 17 Nov 11:53 pip
-drwxr-xr-x   10 alex  staff     320 17 Nov 11:53 pip-21.1.3.dist-info
-drwxr-xr-x    7 alex  staff     224 17 Nov 11:53 pkg_resources
--rw-r--r--    1 alex  staff      90 17 Nov 11:55 pylab.py
-drwxr-xr-x    8 alex  staff     256 17 Nov 11:55 pyparsing-2.4.7.dist-info
--rw-r--r--    1 alex  staff  273365 17 Nov 11:55 pyparsing.py
-drwxr-xr-x    9 alex  staff     288 17 Nov 11:55 python_dateutil-2.8.2.dist-info
-drwxr-xr-x   41 alex  staff    1312 17 Nov 11:53 setuptools
-drwxr-xr-x   11 alex  staff     352 17 Nov 11:53 setuptools-57.0.0.dist-info
-drwxr-xr-x   19 alex  staff     608 17 Nov 11:55 setuptools_scm
-drwxr-xr-x   10 alex  staff     320 17 Nov 11:55 setuptools_scm-6.3.2.dist-info
-drwxr-xr-x    8 alex  staff     256 17 Nov 11:55 six-1.16.0.dist-info
--rw-r--r--    1 alex  staff   34549 17 Nov 11:55 six.py
-drwxr-xr-x    8 alex  staff     256 17 Nov 11:55 tomli
-drwxr-xr-x    7 alex  staff     224 17 Nov 11:55 tomli-1.2.2.dist-info
->>~~~
->>{: .output}
->>
->> Finally, if you look at both the contents of `venv/lib/python3.9/site-packages` and `requirements.txt` and compare that with the packages shown in PyCharm's Python Interpreter Configuration - you will see that they all
->> contain equivalent information.
-> {: .solution}
-{: .challenge}
 
 #### Adding an External Library
 We have already added packages `numpy` and `matplotlib` to our virtual environment from the command line
 in the previous episode, so we are up-to-date with all external libraries we require at the moment. However, we will need library `pytest` soon to implement tests for our code so will use this 
-opportunity to install it from PyCharm in order to see an alternative
-way of doing this and how it propagates to the command line.
+opportunity to install it from VS Code. Strictly speaking VS Code is not an IDE but a code editor which is why we still need to do things in the terminal. An IDE such as PyCharm will have alternative ways to do this via the Graphic User Interface.
 
-1. Select either `PyCharm` > `Preferences` (Mac) or `File` > `Settings` (Linux, Windows).
-2. In the preferences window that appears, select `Project: python-intermediate-inflammation` >
-   `Project Interpreter` from the left.
-3. Select the `+` icon at the top of the window. In the window that appears, search for the name of the library (`pytest`), select it from the list, then select `Install Package`.
-   ![Installing a package in PyCharm](../fig/pycharm-add-library.png){: .image-with-shadow width="800px" }
-4. Select `OK` in the `Preferences` window.
+1. If you already have an open terminal at the bottom of the screen you can enter the following commands in there. If you don't have a terminal open you can open one by clicking on the `Terminal` menu item and then selecting `New Terminal`.
+2. Double check that your virtual environment is active by looking for `(.venv)` displayed with your prompt.
+3. As before we will use pip3 to install the library. In the terminal type: `pip3 install pytest`. It might take a few minutes to install.
 
-It may take a few minutes for PyCharm to install it. After it is done, the `pytest` library is added to our
-virtual environment. You can also verify this from the command line by listing the `venv/lib/python3.9/site-packages` subdirectory. Note, however, that `requirements.txt` is not updated - as we mentioned earlier this is something you have to do manually. Let's do this as an exercise.
+Pytest should now be installed. You can also verify this from the command line by listing the `venv/lib/python3.9/site-packages` subdirectory. Note, however, that `requirements.txt` is not updated - as we mentioned earlier this is something you have to do manually. Let's do this as an exercise.
 
 >## Exercise: Update `requirements.txt` After Adding a New Dependency
 Export the newly updated virtual environment into `requirements.txt` file.
