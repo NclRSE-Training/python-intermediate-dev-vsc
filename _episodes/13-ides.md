@@ -278,12 +278,13 @@ noting that it can be done from within VS Code.
 ### Running Scripts in PyCharm
 We have configured our environment and explored some of the most commonly used VS Code features and are now ready to run our script from VS Code! To do so, right-click the `inflammation-analysis.py` file in the Explorer in the Activity Bar and then select `Run Python File in Terminal`. 
 
-![Running a script from VS Code](../fig/pycharm-run-script.png){: .image-with-shadow width="800px" }
+![Running a script from VS Code](../fig/vsc/20_run_script.png){: .image-with-shadow width="800px" }
 
 The script will run in a terminal window at the bottom of the IDE window and display something like:
 
 ~~~
-/Users/alex/work/python-intermediate-inflammation/venv/bin/python /Users/alex/work/python-intermediate-inflammation/inflammation-analysis.py
+janne@FALCON MINGW64 /g/CARPENTRIES_LESSONS/python-intermediate-inflammation.2 (main)
+$ g:/CARPENTRIES_LESSONS/python-intermediate-inflammation.2/.venv/Scripts/python.exe g:/CARPENTRIES_LESSONS/python-intermediate-inflammation.2/inflammation-analysis.py
 usage: inflammation-analysis.py [-h] infiles [infiles ...]
 inflammation-analysis.py: error: the following arguments are required: infiles
 
