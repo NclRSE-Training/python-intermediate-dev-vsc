@@ -18,7 +18,7 @@ keypoints:
 
 ## Introduction
 So far we have checked out our software project from GitHub and used command line tools to configure a virtual 
-environment for our project and run our code. We have also familiarised ourselves with PyCharm - a graphical tool we
+environment for our project and run our code. We have also familiarised ourselves with VS Code - a graphical tool we
 will use for code development, testing and debugging. We are now going to start using another set of tools from the 
 collaborative code development toolbox - namely, the version control system Git and code sharing platform GitHub.
 These two will enable us to track changes to our code and share it with others.
