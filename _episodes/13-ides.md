@@ -275,7 +275,7 @@ VS Code allows you to do version control from within the editor, i.e. you don't 
 During this course, we will do all our version control commands from the command line but it is worth
 noting that it can be done from within VS Code.
 
-### Running Scripts in PyCharm
+### Running Scripts in VS Code
 We have configured our environment and explored some of the most commonly used VS Code features and are now ready to run our script from VS Code! To do so, right-click the `inflammation-analysis.py` file in the Explorer in the Activity Bar and then select `Run Python File in Terminal`. 
 
 ![Running a script from VS Code](../fig/vsc/20_run_script.png){: .image-with-shadow width="800px" }
@@ -294,7 +294,7 @@ Process finished with exit code 2
 
 This is the same error we got when running the script from the command line. We will get back to this error
 shortly - for now, the good thing is that we managed to set up our project for development both from the
-command line and PyCharm and are getting the same outputs.
+command line and VS Code and are getting the same outputs.
 Before we move on to fixing errors and writing more code, let's have a look at the last set of tools for collaborative
 code development which we will be using in this course - Git and GitHub.
 
