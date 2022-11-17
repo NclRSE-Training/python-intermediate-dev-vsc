@@ -70,7 +70,7 @@ Select `Open Folder` to find the software project directory `python-intermediate
 
 ![Open Folder](../fig/vsc/03_vsc_getstarted_open.png )
 
-A window will pop up asking whether you trust the authors of the files in the folder. You can click the button that says: "Yes, I trust the authors. Trus folder and enable all features." You could also tick the box above to "Trust the authors of all files in the parent folder".
+A window will pop up asking whether you trust the authors of the files in the folder. You can click the button that says: "Yes, I trust the authors. Trust folder and enable all features." You could also tick the box above to "Trust the authors of all files in the parent folder".
 
 ![Trust](../fig/vsc/04_vsc_getstarted_trust.png)
 
@@ -232,29 +232,38 @@ This is a context-aware code completion feature that speeds up the process of co
 common mistakes) by offering available variable
 names, functions from available packages, parameters of functions, hints related to syntax errors, etc.
 
-![Code Completion Functionality in PyCharm](../fig/vsc/15_codecompletion.png){: .image-with-shadow width="600px" }
+![Code Completion Functionality in VS Code](../fig/vsc/15_codecompletion.png){: .image-with-shadow width="600px" }
 
 ### Code Definition & Documentation References
-You will often need code reference information to help you code. PyCharm shows this useful information, such as definitions of symbols (e.g. functions, parameters, classes, fields, and methods) and documentation references by means of quick popups and inline tooltips.
+You will often need code reference information to help you code. VS Code shows this useful information, such as definitions of symbols (e.g. functions, parameters, classes, fields, and methods) and documentation references by means of quick popups and inline tooltips.
 
-For a selected piece of code, you can access various code reference information from the `View` menu (or via various keyboard shortcuts), including:
-- Quick Definition - where and how symbols (functions, parameters, classes, fields, and methods) are defined
-- Quick Type Definition - type definition of variables, fields or any other symbols
-- Quick Documentation - inline documentation (*docstrings*) for any symbol created in accordance with [PEP-257](../05-coding-conventions/index.html#documentation-strings-aka-docstrings))
-- Parameter Info - the names of parameters in method and function calls
-- Type Info - type of an expression
+For a selected piece of code, you can access various code reference information by right clicking for a menu which will offer amongst other things:
+- Go to Definition
+- Go to Definition
+- Go to Type Definition
 
-![Code References Functionality in PyCharm](../fig/pycharm-code-reference.png){: .image-with-shadow width="1000px" }
+![Code References Functionality in VS Code](../fig/vsc/16_code_reference.png){: .image-with-shadow width="1000px" }
 
 ### Code Search
-You can search for a text string within a project, use different scopes to narrow your search process, use regular expressions
-for complex searches, include/exclude certain files from your search, find usages and occurrences. To find a search string
+#### In the current file
+You can search for a string in your current file. The easiest is to press Ctrl+F. In the top right hand corner of the edit screen there should be a popup box with a search field.
+2. If you have anything selected it will automatically be added to the search field. You can delete that if you want, replace it, extend it or use it as is.
+3. Next to the search string there are three options: `Aa ab .*`. `Aa` is to match the case of the search string, `ab` is to match complete words and `.*` is for using regular expressions. When you click any of these options, they will be highlighted, meaning that it will be used when searching. Click an option again to disable it.
+
+![Find in current file](../fig/vsc/17_find_in_file.png){: .image-with-shadow width="1000px" }
+
+#### In the whole project
+You can search for a text string within a project, use different scopes to narrow your search process, and use regular expressions
+for complex searches. To find a search string
 in the whole project:
 
-1. From the main menu, select `Edit | Find | Find in Path ...` (or `Edit | Find | Find in Files...` depending on your version of PyCharm).
-2. Type your search string in the search field of the popup. Alternatively, in the editor, highlight the string you
-want to find and press `Command-Shift-F` (on Mac) or `Control-Shift-F` (on Windows). PyCharm places the highlighted
-string into the search field of the popup.
+1. From the main menu, select `Edit | Find in Files`. Just below the Edit menu at the top of the side bar, a search field should appear.
+2. If you have anything selected it will automatically be added to the search field. You can delete that if you want, replace it, extend it or use it as is.
+3. As before the three search options are available for selection.
+
+
+![Find in file](../fig/vsc/18_find_in_files.png){: .image-with-shadow width="1000px" }
+
 
     ![Code Search Functionality in PyCharm](../fig/pycharm-code-search.png){: .image-with-shadow width="800px" } 
     If you need, specify the additional options in the popup. PyCharm will list the search strings and all the files that contain them.
