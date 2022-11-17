@@ -77,7 +77,7 @@ as a process of development and its components:
 different way of thinking about, structuring and **implementing** the code.
 
 
-The following two sections are complete the development cycle but is covered in a separate workshop:
+## The following two sections complete the development cycle but is covered in a separate workshop:
 
 ### [Section 4: Collaborative Software Development for Reuse](../40-section4-intro/index.html)
 Advancing from the solo code development, in this section you will start working with your fellow learners 
