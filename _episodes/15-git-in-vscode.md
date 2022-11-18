@@ -157,6 +157,7 @@ You could now select any other branch such as develop but let's create a new bra
 11. Switch to the main branch by clickin on `issue #1` in the bottom left hand corner of the window and then select `main`
 12. Click the three dots, `...` next to the repository name and select `Branch` and then 'Merge Branch' from the menu
 13. Select the `issue #1` branch
+14. Press the `Sync Changes` button
 
 
 > {: .solution}
