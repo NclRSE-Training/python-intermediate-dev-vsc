@@ -55,17 +55,17 @@ Let's repeat a few of the git actions we did before, this time not from the comm
 Right click in the side bar and select `New Folder`. Call the new folder `results`. Usually we don't want results added to
 version control so add `results/` to the .gitignore file. See if you can do this by yourself.
 
->## Exercise: Add the `results` folder to .gitignore
+> ## Exercise: Add the `results` folder to .gitignore
 > Open the .gitignore file and add `results/`
->>## Solution
+> > ## Solution
 1. Click on .gitignore in the Side Bar, to open the file in the editor area.
 2. Add the following text at the bottom of the file:
-```
-# Results Folder
-results
-```
+> ```
+> # Results Folder
+> results
+> ```
 
->{: .solution}
+> {: .solution}
 {: .challenge}
 
 {% include links.md %}
