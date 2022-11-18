@@ -50,6 +50,13 @@ new instance of the lesson material.
 
 Let's repeat a few of the git actions we did before, this time not from the command line but with VS Code features.
 
+### Creating a virtual environment
+
+1. Press Ctrl+Shift+P
+2. Find and click `Python: Create Environment`
+3. Click `Venv`
+4. Select Python interpreter (3.9.# if possible)
+
 ### Creating a new folder
 
 Right click in the side bar and select `New Folder`. Call the new folder `results`. 
@@ -64,19 +71,46 @@ version control so add `results/` to the .gitignore file. See if you can do this
 > > ## Solution
 1. Click on .gitignore in the Side Bar, to open the file in the editor area.
 2. Add the following text at the bottom of the file:
-> ```
-> # Results Folder
-> results
-> ```
+> > ```
+> > # Results Folder
+> > results
+> > ```
 3. Press Ctrl+S to save the file
 > {: .solution}
 {: .challenge}
 
+### Making sense of the VS Code window
+
 You might notice that the moment you save the file, a small blue circle with a `1` in it appears over the Source Control 
 button in the Activity Bar. From this we can see that there is one untracked change. Click on the Source Control button. 
-Take a moment to study the source control items in the Side Bar
+Take a moment to study the source control items in the Side Bar.
 
 ![Source Control](../fig/vsc/24_source_control.png){: .image-with-shadow width="1000px"}
+
+1. Below the heading `SOURCE CONTROL REPOSITORIES` we can see the name of our repository, `python-intermediate-inflammation-1`
+2. Below the second heading, `SOURCE CONTROL`, there is a text area.
+3. There is a `Commit` button that is inactive
+4. Then you should see the title `Changes` and to the right of it a `1` in a circle
+5. You should see `.gitignore` and to the right of it an `M`
+6. In the bottom left hand corner of the screen you should see the source control icon and next to it the word `main`
+
+From this information we can tell that:
+
+1. we are working on the `python-intermediate-inflammation-1`
+2. One file (indicated by the `1` next to the `Changes` heading), `.gitignore`, had been modified (hence the `M` next to it), 
+but the change has not been staged
+3. The word `main` in the bottom left hand corner of the screen tells us that we are on the main branch
+
+### Commit and Push
+
+Remember the order of getting things into the repository?
+1. Stage the file/s by adding it
+2. Commit the file with a message
+3. Push the file to GitHub
+
+To do this from VS Code, first hover over the .gitignore file in the Side Bar. You'll notice three more icons to the left of the `M`. The first icon is for opening the file, the second for reverting all changes and the third, the `+` is for staging the file. Click the `+`. The heading that used to say `Changes`, now changed to `Staged Changes`. The `Commit` button is now active. Enter the commit message, `Ignore results folder`, in the text area above the `Commit` button and then click the `Commit` button. Next to the repository name there should be a button with three dots, `...`. Click the button and then click `Push` on the pop-up menu.
+
+
 
 
 {% include links.md %}
