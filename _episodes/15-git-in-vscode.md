@@ -123,7 +123,38 @@ nothing to commit, working tree clean
 ### Create a new branch
 
 To create a new branch, just click on the word `main` in the bottom left hand corner of the window. At the top of the 
-window a text area and a drop-down menu will appear.
+window a text area and a drop-down menu will appear:
+
+![Create a branch](../fig/vsc/24_create_branch.png){: .image-with-shadow width="1000px"}
+
+You could now select any other branch such as develop but let's create a new branch to see how it is done. Enter `issue #1` in the text area and then click `Create new branch`. At the bottom of the window you will see that `main` has been replaced and that we are now on the `issue #1` branch. In the Side Bar there is now a new button `Publish Branch`. We won't publish yet. Let's first add something. We'll have you do that as an exercise:
+
+> ## Exercise: Make changes, commit and push
+> Using VS Code's features complete the following tasks on the `issue #1` branch:
+1. Creat a new file and call it `temperature.py`
+2. Add the following code to the file:
+> ```python
+> def fahr_to_celcius(fahr_temp):
+>    return (fahr_temp -32) * 5 / 9
+> print(fahr_to_celcius(40))
+> ```
+3. Run the script and jot down the answer you get from the print statement 
+4. ge and commit the file with the message `Address issue #1`.
+6. Publish the changes to GitHub and check in the GitHub repository whether your changes are reflected there
+7. Use VS Code to merge the `issue #1` branch into the main branch
+> 
+> > ## Solution
+1. In the activity bar select the Explorer button
+2. On the menu, click `File` and then `New File`
+3. Enter `temperature.py` as the filename and press enter
+4. Copy the code into the editor and press Ctrl+S to save it
+5. Run the script by clicking the `Run Python File` in the top right corner of the window
+6. The answer you get in the terminal should be `-40.0`
+7. Click on the `Source Control` button on the Activity Bar
+8. 
+> {: .solution}
+{: .challenge}
+
 
 
 {% include links.md %}
