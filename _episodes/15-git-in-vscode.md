@@ -52,7 +52,11 @@ Let's repeat a few of the git actions we did before, this time not from the comm
 
 ### Creating a new folder
 
-Right click in the side bar and select `New Folder`. Call the new folder `results`. Usually we don't want results added to
+Right click in the side bar and select `New Folder`. Call the new folder `results`. 
+
+![Create a new folder](../fig/vsc/23_create_folder.png){: .image-with-shadow width="1000px"}
+
+Usually we don't want results added to
 version control so add `results/` to the .gitignore file. See if you can do this by yourself.
 
 > ## Exercise: Add the `results` folder to .gitignore
@@ -64,8 +68,15 @@ version control so add `results/` to the .gitignore file. See if you can do this
 > # Results Folder
 > results
 > ```
-
+3. Press Ctrl+S to save the file
 > {: .solution}
 {: .challenge}
+
+You might notice that the moment you save the file, a small blue circle with a `1` in it appears over the Source Control 
+button in the Activity Bar. From this we can see that there is one untracked change. Click on the Source Control button. 
+Take a moment to study the source control items in the Side Bar
+
+![Source Control](../fig/vsc/24_source_control.png){: .image-with-shadow width="1000px"}
+
 
 {% include links.md %}
