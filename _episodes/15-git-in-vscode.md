@@ -158,8 +158,7 @@ You could now select any other branch such as develop but let's create a new bra
 12. Click the three dots, `...` next to the repository name and select `Branch` and then 'Merge Branch' from the menu
 13. Select the `issue #1` branch
 14. Press the `Sync Changes` button
-
-
+15. To delete the branch remotely (on GitHub), type `git push origin --delete issue-#1` in a terminal
 > {: .solution}
 {: .challenge}
 
