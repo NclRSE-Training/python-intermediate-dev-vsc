@@ -56,10 +56,14 @@ Right click in the side bar and select `New Folder`. Call the new folder `result
 version control so add `results/` to the .gitignore file. See if you can do this by yourself.
 
 >## Exercise: Add the `results` folder to .gitignore
-Open the .gitignore file and add `results/`
+> Open the .gitignore file and add `results/`
 >>## Solution
->>Let's verify first that the newly installed library `pytest` is appearing in our virtual environment
->>but not in `requirements.txt`. First, let's check the list of installed packages:
+1. Click on .gitignore in the Side Bar, to open the file in the editor area.
+2. Add the following text at the bottom of the file:
+```
+# Results Folder
+results
+```
 
 >{: .solution}
 {: .challenge}
