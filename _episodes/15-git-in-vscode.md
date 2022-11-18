@@ -150,8 +150,15 @@ You could now select any other branch such as develop but let's create a new bra
 4. Copy the code into the editor and press Ctrl+S to save it
 5. Run the script by clicking the `Run Python File` in the top right corner of the window
 6. The answer you get in the terminal should be `-40.0`
-7. Click on the `Source Control` button on the Activity Bar
-8. 
+7. Click on the `Source Control` button in the Activity Bar
+8. In the Activity Bar next to the filename, `temperature.py` click the `+` button to stage the file
+9. Enter the message `Address issue #1` and press the `Commit Button`
+10. Click the three dots, `...` next to the repository name and select `Push` from the menu
+11. Switch to the main branch by clickin on `issue #1` in the bottom left hand corner of the window and then select `main`
+12. Click the three dots, `...` next to the repository name and select `Branch` and then 'Merge Branch' from the menu
+13. Select the `issue #1` branch
+
+
 > {: .solution}
 {: .challenge}
 
