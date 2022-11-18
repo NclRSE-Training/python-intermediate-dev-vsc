@@ -110,7 +110,20 @@ Remember the order of getting things into the repository?
 
 To do this from VS Code, first hover over the .gitignore file in the Side Bar. You'll notice three more icons to the left of the `M`. The first icon is for opening the file, the second for reverting all changes and the third, the `+` is for staging the file. Click the `+`. The heading that used to say `Changes`, now changed to `Staged Changes`. The `Commit` button is now active. Enter the commit message, `Ignore results folder`, in the text area above the `Commit` button and then click the `Commit` button. Next to the repository name there should be a button with three dots, `...`. Click the button and then click `Push` on the pop-up menu.
 
+In the side bar you should now notice that there are not files that are changed. To verify that things have happened as we would expect, you can open 
+a terminal and type `git status`, which should result in the following message:
 
+```
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean 
+```
+
+### Create a new branch
+
+To create a new branch, just click on the word `main` in the bottom left hand corner of the window. At the top of the 
+window a text area and a drop-down menu will appear.
 
 
 {% include links.md %}
