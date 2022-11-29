@@ -67,7 +67,9 @@ Once we know our way around different code development tools, techniques and con
 - how to set up a **test framework** and write tests to verify the correct behaviour of the code, and
 - how to automate and scale testing with **Continuous Integration (CI)** using 
 **GitHub Actions** (a CI service available on GitHub).
- 
+
+## The following three sections complete the development cycle but are covered in a separate workshop:
+
 ### [Section 3: Software Development as a Process](../30-section3-intro/index.html)
 In this section, we step away from writing code for a bit to look at software from a higher level 
 as a process of development and its components:
@@ -76,8 +78,6 @@ as a process of development and its components:
 - different **programming and software design paradigms**, each representing a slightly 
 different way of thinking about, structuring and **implementing** the code.
 
-
-## The following two sections complete the development cycle but are covered in a separate workshop:
 
 ### [Section 4: Collaborative Software Development for Reuse](../40-section4-intro/index.html)
 Advancing from the solo code development, in this section you will start working with your fellow learners 
