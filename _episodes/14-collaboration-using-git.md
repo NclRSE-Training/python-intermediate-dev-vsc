@@ -106,7 +106,7 @@ To tell Git to intentionally ignore and not track certain files and directories,
 it - you can simply create it yourself. In our case, we
 want to tell Git to ignore the `venv` directory (and `.venv` as another naming convention for virtual environments)
 and stop notifying us about it. Edit your `.gitignore`
-file in PyCharm and add a line containing "venv/" and another one containing ".venv/". It does not matter much
+file in VS Code and add a line containing "venv/" and another one containing ".venv/". It does not matter much
 in this case where within the file you add these lines, so let's do it at the end. Your `.gitignore` should look something like this:
 
 ~~~
@@ -314,7 +314,7 @@ Switched to branch 'develop'
 If we start updating files now, the modifications will happen on the `develop` branch and will not affect the version
 of the code in `main`. We add and commit things to `develop` branch in the same way as we do to `main`.
 
-Let's make a small modification to `inflammation/models.py` in PyCharm, and, say, change the spelling of "2d" to
+Let's make a small modification to `inflammation/models.py` in VS Code, and, say, change the spelling of "2d" to
 "2D" in docstrings for functions `daily_mean()`, `daily_max()` and `daily_min()`.
 
 If we do:
