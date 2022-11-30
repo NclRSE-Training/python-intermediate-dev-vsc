@@ -48,7 +48,7 @@ repository from GitHub within your own GitHub account and then obtain a local co
 your machine. Let's do this.
 
 1. Log into your GitHub account. 
-2. Go to the [software project template repository](https://github.com/carpentries-incubator/python-intermediate-inflammation) in GitHub.
+2. Go to the [software project template repository]([https://github.com/carpentries-incubator/python-intermediate-inflammation](https://github.com/NclRSE-Training/python-intermediate-inflammation)) in GitHub.
 ![Software project template repository in GitHub](../fig/template-repository.png){: .image-with-shadow width="800px" }
 3. Click the `Use this template` button towards the top right of the template repository's GitHub page to create a **copy** of
 the repository under your GitHub account (you will need to be signed into GitHub to see the `Use this template` button). 
