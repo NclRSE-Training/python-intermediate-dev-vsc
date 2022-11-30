@@ -47,7 +47,7 @@ debugger, and some can also interact with a version control system. Compared to 
 editor is usually smaller and quicker, but often less feature-rich. You will have to decide which one is the best for
 you - in this course we will learn how to use [VS Code](https://code.visualstudio.com/), a free code editor from Microsoft. Some popular alternatives include free and open source IDE [Spyder](https://www.spyder-ide.org/) and [PyCharm](https://www.jetbrains.com/pycharm/), a free open source Python IDE.
 
-## Using Visual Source Code
+## Using Visual Studio Code
 
 Let's open our project in VS Code now and familiarise ourselves with some commonly used features.
 
