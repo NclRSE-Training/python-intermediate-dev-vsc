@@ -54,8 +54,8 @@ Look at other examples and decide what looks best. And don't hesitate to ask!
 >
 {: .callout}
 
-As we have already covered in the [episode on PyCharm IDE](../13-ides/index.html), PyCharm highlights the language constructs
-(reserved words) and syntax errors to help us with coding. PyCharm also gives us recommendations for formatting the code - these recommendations
+As we have already covered in the [episode on VS Code](../13-ides/index.html), VS Code highlights the language constructs
+(reserved words) and syntax errors to help us with coding. VS Code also gives us recommendations for formatting the code - these recommendations
 are mostly taken from the PEP8 style guide.
 
 A full list of style guidelines for this style 
@@ -335,10 +335,10 @@ However, there are some restrictions. Comments that simply restate what the code
 > ~~~
 >  {: .language-bash}
 >
-> Next look at the `inflammation-analysis.py` file in PyCharm and identify where the above guidelines have not been followed. Fix
+> Next look at the `inflammation-analysis.py` file in VS Code and identify where the above guidelines have not been followed. Fix
 the discovered inconsistencies and commit them to the feature branch.
 >> ## Solution
->> Modify `inflammation-analysis.py` from PyCharm, which is helpfully marking inconsistencies with
+>> Modify `inflammation-analysis.py` from VS Code, which is helpfully marking inconsistencies with
 >> coding guidelines by underlying them. There are a few things to fix in `inflammation-analysis.py`, for example:
 >>
 >>  1. Line 24 in `inflammation-analysis.py` is too long and not very readable. A better style would be to use
@@ -381,10 +381,10 @@ the discovered inconsistencies and commit them to the feature branch.
 >>  3. There is an extra blank line on line 20 in `inflammation-analysis.py`. Normally, you should not use blank
 >> lines in the
 >> middle of the code unless you want to separate logical units - in which case only one blank line is used.
->> Note how PyCharm is warning us by underlying the whole line.
+>> Note how VS Code is warning us by underlying the whole line.
 >>
 >>  4. Only one blank line after the end of definition of function `main` and the rest of the code on line 30 in
->> `inflammation-analysis.py` - should be two blank lines. Note how PyCharm is warning us by underlying the whole line.
+>> `inflammation-analysis.py` - should be two blank lines. Note how VS Code is warning us by underlying the whole line.
 >>
 >> Finally, let's add and commit our changes to the feature branch. We will check the status of our working directory first.
 >>
@@ -494,7 +494,7 @@ The docstring for a function or a module is returned when
 calling the `help` function and passing its name - for example from the interactive Python console/terminal available
 from the command line or when rendering code documentation online 
 (e.g. see [Python documentation](https://docs.python.org/3.8/library/index.html)).
-PyCharm also displays the docstring for a function/module in a little help popup window when using tab-completion.
+VS Code also displays the docstring for a function/module in a little help popup window when using tab-completion.
 
 ~~~
 help(fibonacci)
@@ -502,7 +502,7 @@ help(fibonacci)
  {: .language-python}
 
 > ## Exercise: Fix the Docstrings
-> Look into `models.py` in PyCharm and improve docstrings for functions `daily_mean` ,`daily_min`, `daily_max`. 
+> Look into `models.py` in VS Code and improve docstrings for functions `daily_mean` ,`daily_min`, `daily_max`. 
 > Commit those changes to feature branch `style-fixes`.
 > > ## Solution
 > > For example, the improved docstrings for the above functions would contain explanations for parameters and
