@@ -28,13 +28,13 @@ Start by opening a new VS Code window. Click on the `File` menu item and then on
 
 ![New VS Code window](../fig/vsc/21_new_window.png){: .image-with-shadow width="1000px"}
 
-Navigate to your GitHub repository in your browser and click on the green 'Copy' button. Make sure the SSH tab is selected 
+Navigate to your GitHub repository in your browser and click on the green 'Clone' button. Make sure the SSH tab is selected 
 and copy the URL, which should start with `git@github` in the text area. You can copy the URL by clicking the little copy 
 icon just to the right of the text area.
 
 ![Clone repository](../fig/vsc/clone_repository.png){: .image-with-shadow width="1000px"}
 
-Back in VS Code's new window, in the editor are, you should see an option 'Clone Git Repository.
+Back in VS Code's new window, in the editor area, you should see an option 'Clone Git Repository.
 
 ![Clone repository](../fig/vsc/22_clone_repository.png){: .image-with-shadow width="1000px"}
 
@@ -43,7 +43,7 @@ directory for the repository to be cloned. You can create it in the same main di
 of the repository but we will give it a new name so that it doesn't clash in any way. Make sure you don't create it within the previous 
 repository, you just want it on the same hierachical level. VS Code will notice that a repository with the name `python-intermediate-inflammation`
 already exists and it will clone this new instance with the name `python-intermediate-inflammation-1`. VS Code will also ask you whether
-you want to open the new folder. You can click `Yes` to this question and the project will be openend for you.
+you want to open the new folder. You can click `Open` to this question and the project will be openened for you.
 
 The changes you made in the previous lesson were pushed to the GitHub repository so those changes will be in this
 new instance of the lesson material. 
