@@ -194,6 +194,7 @@ drwxr-xr-x 1 janne 197609   0 Nov 30 19:56 Lib/
 drwxr-xr-x 1 janne 197609   0 Nov 30 20:02 Scripts/
 drwxr-xr-x 1 janne 197609   0 Nov 30 20:02 share/
 ~~~
+{: .output}
 
 So, running the `python3 -m venv venv` command created the target directory called `venv`
 containing:
