@@ -180,6 +180,21 @@ drwxr-xr-x   3 alex  staff   96  5 Oct 11:47 lib
 ~~~
 {: .output}
 
+In Windows (Git Bash) it would look more like this:
+
+~~~
+$ ls -l venv
+~~~
+{: .language-bash}
+~~~
+total 5
+drwxr-xr-x 1 janne 197609   0 Nov 30 19:56 Include/
+drwxr-xr-x 1 janne 197609   0 Nov 30 19:56 Lib/
+-rw-r--r-- 1 janne 197609 119 Nov 30 19:56 pyvenv.cfg
+drwxr-xr-x 1 janne 197609   0 Nov 30 20:02 Scripts/
+drwxr-xr-x 1 janne 197609   0 Nov 30 20:02 share/
+~~~
+
 So, running the `python3 -m venv venv` command created the target directory called `venv`
 containing:
 
